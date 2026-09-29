@@ -7,7 +7,17 @@ import * as schema from "./schema";
 export const DEFAULT_DATABASE_URL = "file:./data/sellfeetonline.db";
 
 export function getDatabaseUrl() {
-  return process.env.DATABASE_URL?.trim() || DEFAULT_DATABASE_URL;
+  // Vercel's Turso Marketplace integration injects TURSO_DATABASE_URL / TURSO_AUTH_TOKEN;
+  // a manual/VPS setup uses DATABASE_URL / DATABASE_AUTH_TOKEN. Accept either.
+  return (
+    process.env.DATABASE_URL?.trim() ||
+    process.env.TURSO_DATABASE_URL?.trim() ||
+    DEFAULT_DATABASE_URL
+  );
+}
+
+export function getDatabaseAuthToken() {
+  return process.env.DATABASE_AUTH_TOKEN?.trim() || process.env.TURSO_AUTH_TOKEN?.trim() || undefined;
 }
 
 type DbBundle = { client: Client; db: LibSQLDatabase<typeof schema> };
@@ -23,7 +33,7 @@ function createDb(): DbBundle {
 
   const client = createClient({
     url,
-    authToken: process.env.DATABASE_AUTH_TOKEN?.trim() || undefined,
+    authToken: getDatabaseAuthToken(),
   });
 
   if (url.startsWith("file:")) {

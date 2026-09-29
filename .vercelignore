@@ -1,0 +1,15 @@
+# Env files with secrets — Vercel injects env from Project Settings, not from uploaded files.
+# (scripts/_env.ts loads .env/.env.local at build time, so these must NOT be uploaded.)
+/.env
+/.env.local
+/.env.*.local
+
+# Local-only data — production uses Turso (DB) and Vercel Blob (uploads).
+/data
+/storage
+
+# Rebuilt / installed on Vercel; no need to upload.
+/.next
+/node_modules
+/.git
+/.vercel

@@ -46,3 +46,6 @@ next-env.d.ts
 # local database and uploads
 /data/
 /storage/
+
+.vercel
+.env*
