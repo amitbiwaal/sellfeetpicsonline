@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "intro": "What we collect, why we collect it, and the choices you have.",
+    "seoDescription": "How SellFeetOnline collects, uses and protects your information, which cookies we use, and how to exercise your privacy rights."
+  },
+  {
+    "slug": "terms-of-service",
+    "title": "Terms of Service",
+    "intro": "The rules for using SellFeetOnline. Please read them carefully.",
+    "seoDescription": "The terms and conditions for using SellFeetOnline, including eligibility (18+), acceptable use, affiliate links and limitations of liability."
+  },
+  {
+    "slug": "disclaimer",
+    "title": "Disclaimer",
+    "intro": "Important information about earnings, advice and the accuracy of platform details.",
+    "seoDescription": "SellFeetOnline provides general information only. Read our earnings disclaimer and why platform fees and rules should always be verified."
+  },
+  {
+    "slug": "affiliate-disclosure",
+    "title": "Affiliate Disclosure",
+    "intro": "How SellFeetOnline is funded, and why our rankings are never for sale.",
+    "seoDescription": "SellFeetOnline may earn commissions from some platform links at no extra cost to you. Learn how affiliate links work and how we stay independent."
+  },
+  {
+    "slug": "cookie-policy",
+    "title": "Cookie Policy",
+    "intro": "Which cookies the Site uses and how you can control them.",
+    "seoDescription": "Learn which cookies SellFeetOnline uses, why we use them and how you can manage or block cookies in your browser."
+  },
+  {
+    "slug": "dmca-policy",
+    "title": "DMCA Policy",
+    "intro": "How to report copyright infringement on SellFeetOnline.",
+    "seoDescription": "How to send a DMCA takedown notice or counter-notice to SellFeetOnline, and what to do if your photos were stolen."
+  },
+  {
+    "slug": "editorial-policy",
+    "title": "Editorial Policy",
+    "intro": "How we research, rate and update our guides and platform reviews.",
+    "seoDescription": "How SellFeetOnline researches and rates selling platforms, keeps content up to date, handles corrections and stays independent."
+  }
+]
